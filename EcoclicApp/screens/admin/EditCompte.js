@@ -85,6 +85,7 @@ class EditCompte extends React.Component {
                     onChangeText={handleChange("compteNum")}
                     onBlur={() => setFieldTouched("compteNum")}
                     placeholder="Numéro du compte"
+                    disabled="true"
                   />
                   {touched.compteNum && errors.compteNum && (
                     <Text

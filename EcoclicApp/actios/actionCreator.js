@@ -355,6 +355,7 @@ export const addCompany = (token, company) => {
 };
 export const editCompany = (token, compte) => {
   console.log("dispatched ");
+  console.log(compte);
   return (dispatch, getState) => {
     axios
       .patch(
@@ -367,12 +368,15 @@ export const editCompany = (token, compte) => {
       )
 
       .then((responce) => {
+        console.log("yeeeeees");
         dispatch({
           type: ACTION_TYPES.EDIT_COMPANY_SUCCESS,
           payload: { responce, compte },
         });
       })
       .catch((error) => {
+        console.log("Noooooo");
+        console.log(error);
         dispatch({
           type: ACTION_TYPES.EDIT_COMPANY_FAILURE,
           payload: error,

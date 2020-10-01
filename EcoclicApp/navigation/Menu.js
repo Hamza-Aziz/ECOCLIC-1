@@ -25,7 +25,8 @@ function CustomDrawerContent({
       forceInset={{ top: "always", horizontal: "never" }}
     >
       <Block flex={0.06} style={styles.header}>
-        <Image styles={styles.logo} source={Images.Logo} />
+        {/* <Image styles={styles.logo} source={Images.Logo} /> */}
+        <Text>Ecoclic</Text>
       </Block>
       <Block flex style={{ paddingLeft: 8, paddingRight: 14 }}>
         <ScrollView style={{ flex: 1 }} showsVerticalScrollIndicator={false}>
@@ -51,7 +52,7 @@ function CustomDrawerContent({
               }}
             />
             <Text color="#8898AA" style={{ marginTop: 16, marginLeft: 8 }}>
-              vous etes connecté
+              vous êtes connecté
             </Text>
           </Block>
         </ScrollView>

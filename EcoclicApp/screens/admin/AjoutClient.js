@@ -53,7 +53,7 @@ class AjoutClient extends React.Component {
                   actions.addClient(this.props.token, vauesTosend)
                 );
                 if (added) {
-                  Alert.alert(this.props.messageAddClient);
+                  Alert.alert("client ajouté avec succée");
                 }
               }}
               validationSchema={validationSchema}

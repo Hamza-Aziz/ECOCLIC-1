@@ -22,9 +22,9 @@ const assetImages = [
   Images.LogoOnboarding,
   Images.Logo,
   Images.Pro,
-  Images.ArgonLogo,
+  // Images.ArgonLogo,
   Images.iOSLogo,
-  Images.androidLogo,
+  // Images.androidLogo,
 ];
 
 // cache product images
